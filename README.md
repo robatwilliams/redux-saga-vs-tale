@@ -16,6 +16,6 @@ in pong
 ping: putted PONG
 ```
 
-That appears to be two synchronous running sagas interleaving.
+That appears to be two synchronous running sagas interleaving, and puts happening immediately.
 
 Seems that it used to be that `put()` was non-blocking and there was a `put.sync()` that was blocking: https://github.com/redux-saga/redux-saga/issues/626
