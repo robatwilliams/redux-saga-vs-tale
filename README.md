@@ -18,4 +18,4 @@ ping: putted PONG
 
 That appears to be two synchronous running sagas interleaving, and puts happening immediately.
 
-Seems that it used to be that `put()` was non-blocking and there was a `put.sync()` that was blocking: https://github.com/redux-saga/redux-saga/issues/626
+Seems that it used to be that `put()` was non-blocking and there was a `put.sync()` that was blocking: https://github.com/redux-saga/redux-saga/issues/626. Latter was deprecated at some point and then removed in v1.0.0 https://github.com/redux-saga/redux-saga/releases/tag/v1.0.0
